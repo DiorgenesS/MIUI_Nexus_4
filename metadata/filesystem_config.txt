@@ -100,6 +100,8 @@ system/app/LiveWallpapersPicker/oat/arm 0 0 755 selabel=u:object_r:system_file:s
 system/app/LiveWallpapersPicker/oat/arm/LiveWallpapersPicker.odex 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/MapsStub 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/MapsStub/MapsStub.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/MiuiVideoPlayer 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/MiuiVideoPlayer/MiuiVideoPlayer.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Music2 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Music2/Music2.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/NewsstandStub 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
