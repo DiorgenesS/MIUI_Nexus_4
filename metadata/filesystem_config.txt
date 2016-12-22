@@ -71,6 +71,8 @@ system/app/FitnessPrebuiltStub 0 0 755 selabel=u:object_r:system_file:s0 capabil
 system/app/FitnessPrebuiltStub/FitnessPrebuiltStub.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/GoogleCamera 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/GoogleCamera/GoogleCamera.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/GoogleCalendarSyncAdapter 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/GoogleContactsSyncAdapter 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/GoogleEars 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -93,6 +95,10 @@ system/app/KeyChain/oat/arm 0 0 755 selabel=u:object_r:system_file:s0 capabiliti
 system/app/KeyChain/oat/arm/KeyChain.odex 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LatinImeGoogle 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LatinImeGoogle/LatinImeGoogle.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle/lib/arm/libjni_keyboarddecoder.so 0 0 777 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle/lib/arm/libjni_latinimegoogle.so 0 0 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker/oat 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -174,6 +180,9 @@ system/app/VideosStub 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/VideosStub/VideosStub.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WebViewGoogle 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WebViewGoogle/WebViewGoogle.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/WebViewGoogle/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/WebViewGoogle/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/WebViewGoogle/lib/arm/libwebviewchromium.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/YouTubeStub 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/YouTubeStub/YouTubeStub.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/talkback 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -699,6 +708,9 @@ system/etc/security/cacerts/ff783690.0 0 0 644 selabel=u:object_r:system_file:s0
 system/etc/sysconfig 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sysconfig/google.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sysconfig/google_build.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sysconfig/google_vr_build.xml 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sysconfig/nexus.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sysconfig/whitelist_com.android.omadm.service.xml 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/updatecmds 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/updatecmds/google_generic_update.txt 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/wifi 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1085,6 +1097,8 @@ system/lib/libjavacore.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities
 system/lib/libjavacrypto.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libjhead.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libjhead_jni.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lib/libjni_keyboarddecoder.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lib/libjni_latinimegoogle.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libjni_pacprocessor.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libjnigraphics.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libjpeg.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0

@@ -7,12 +7,10 @@ private-phone-apps := \
 	CertInstaller \
 	FaceLock \
 	KeyChain \
-	LatinImeGoogle \
 	NfcNci \
 	PacProcessor \
 	PrintSpooler \
-	Stk \
-	WebViewGoogle 
+	Stk 
 
 private-phone-priv-apps := \
 	BackupRestoreConfirmation \
