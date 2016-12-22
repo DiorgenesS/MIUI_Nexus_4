@@ -12,7 +12,7 @@ def AddAssertions(info):
     edify = info.script
     for i in xrange(len(edify.script)):
         if " ||" in edify.script[i] and ("ro.product.device" in edify.script[i] or "ro.build.product" in edify.script[i]):
-            edify.script[i] = edify.script[i].replace(" ||", ' || getprop("ro.build.product") == "mako" || getprop("ro.product.device") == "mako" || getprop("ro.build.product") == "mako" || getprop("ro.product.device") == "occam" || getprop("ro.build.product") == "occam" ||')
+            edify.script[i] = edify.script[i].replace(" ||", ' || getprop("ro.build.product") == "mako" || getprop("ro.product.device") == "occam" || getprop("ro.build.product") == "occam" ||')
             return
 
 def AddArgsForFormatSystem(info):
