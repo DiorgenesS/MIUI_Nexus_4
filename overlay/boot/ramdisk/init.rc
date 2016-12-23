@@ -11,7 +11,6 @@ import /init.usb.configfs.rc
 import /init.${ro.zygote}.rc
 import /init.trace.rc
 import /init.miui.rc
-#import init.supersu.rc
 
 on early-init
     # Set init and its forked children's oom_adj.
@@ -388,6 +387,7 @@ on post-fs-data
     setusercryptopolicies /data/user
 
     # Reload policy from /data/security if present.
+    setprop selinux.reload_policy 1
 
     # Set SELinux security contexts on upgrade or policy update.
     restorecon_recursive /data
@@ -763,5 +763,3 @@ service logcatd /system/bin/logcat -b all -v threadtime -v usec -v printable -D 
     user logd
     group log
     writepid /dev/cpuset/system-background/tasks
-# SuperSU:PATCH:279
-# SuperSU:STOCK:ba9ba907f44ce5c218b0b01213169c7253957594
