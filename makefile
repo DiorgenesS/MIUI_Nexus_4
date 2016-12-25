@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := 
 
 # All apks from MIUI
-local-miui-removed-apps := AMAPNetworkLocation BugReport FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip QuickSearchBox SogouInput SystemAdSolution VoiceAssist WebViewGoogle XiaomiVip XMPass 
+local-miui-removed-apps := BugReport FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip QuickSearchBox SogouInput SystemAdSolution VoiceAssist WebViewGoogle XiaomiVip XMPass 
 
 local-miui-modified-apps := InCallUI MiuiSystemUI SecurityCenter 
 
@@ -59,7 +59,6 @@ local-pre-zip-misc:
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
 	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
-	rm -rf $(ZIP_DIR)/system/lib/libapssdk.so
 	rm -rf $(ZIP_DIR)/system/lib/libminivenus.so
 	rm -rf $(ZIP_DIR)/system/lib/libmresearch.so
 	rm -rf $(ZIP_DIR)/system/lib/libsecurities_sdk.so

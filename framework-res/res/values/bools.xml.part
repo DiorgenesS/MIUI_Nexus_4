@@ -2,5 +2,4 @@
 <resources>
     <bool name="config_allowAllRotations">true</bool>
 
-    <bool name="config_enableNetworkLocationOverlay">true</bool>
 </resources>
