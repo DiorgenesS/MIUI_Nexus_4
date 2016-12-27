@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := org.cyanogenmod.platform
 
 # All apks from MIUI
-local-miui-removed-apps := AMAPNetworkLocation BugReport FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip QuickSearchBox SogouInput SystemAdSolution VoiceAssist WebViewGoogle XiaomiVip XMPass 
+local-miui-removed-apps := BugReport FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip QuickSearchBox SogouInput SystemAdSolution VoiceAssist WebViewGoogle XiaomiVip XMPass 
 
 local-miui-modified-apps := InCallUI MiuiSystemUI 
 
@@ -62,7 +62,6 @@ local-pre-zip-misc:
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
 	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
-	rm -rf $(ZIP_DIR)/system/lib/libapssdk.so
 	rm -rf $(ZIP_DIR)/system/lib/libjni_eglfence.so
 	rm -rf $(ZIP_DIR)/system/lib/libjni_filtershow_filters.so
 	rm -rf $(ZIP_DIR)/system/lib/libjni_jpegstream.so
