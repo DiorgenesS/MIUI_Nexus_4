@@ -30,4 +30,5 @@ private-phone-priv-apps := \
 	Screencast \
 	SharedStorageBackup \
 	Shell \
-	StatementService 
+	StatementService \
+	TeleService 
