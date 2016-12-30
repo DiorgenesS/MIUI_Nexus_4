@@ -1691,6 +1691,12 @@
 
     return-object v0
 
+    invoke-static {p0}, Landroid/graphics/TypefaceHook;->makeFontFamily(Landroid/graphics/FontListParser$Family;)Landroid/graphics/FontFamily;
+
+    move-result-object v0
+
+    return-object v0
+
     .line 274
     new-instance v2, Landroid/graphics/FontFamily;
 
