@@ -44,6 +44,8 @@ fi
 
 if [ $1 = "MiuiSystemUI" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
+	#fix torch light
+	sed -i 's/\/sys\/class\/leds\/spotlight\/brightness/\/sys\/class\/leds\/torch-sec1\/brightness/g' $2/smali/com/android/systemui/TorchServiceView.smali
 fi
 
 if [ $1 = "SecurityCenter" ];then
