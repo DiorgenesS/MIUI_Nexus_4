@@ -78,7 +78,7 @@ local-pre-zip-misc:
 	@echo remove unnecessary files!
 	$(hide) rm -rf $(ZIP_DIR)/system/etc/CHANGELOG-CM.txt
 	$(hide) rm -rf $(ZIP_DIR)/system/etc/CHANGES.txt
-	$(hide) rm -rf $(ZIP_DIR)/system/recovery-from-boot.bak
+	$(hide) rm -rf $(ZIP_DIR)/system/recovery-from-boot.p
 	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/*
 	@echo use only miui sounds!
 	$(hide) cp -rf $(PORT_ROOT)/miui/system/media/$(local-density)/audio/* $(ZIP_DIR)/system/media/audio
