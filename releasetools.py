@@ -10,6 +10,7 @@ unmount("/data");
 unmount("/system");"""
       return
 
+def AddAssertions(info):
    edify = info.script
    for i in xrange(len(edify.script)):
     if " ||" in edify.script[i] and ("ro.product.device" in edify.script[i] or "ro.build.product" in edify.script[i]):
