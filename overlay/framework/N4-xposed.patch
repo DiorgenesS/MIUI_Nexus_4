@@ -311,7 +311,7 @@ Subject: [PATCH] For support xposed MIUI edition install
 -    goto :goto_1
 +    goto/16 :goto_1
  .end method
- 
+ .field public extraConfig:Landroid/content/res/MiuiConfiguration;
 
 --- a/framework/smali/android/content/res/Resources$Theme.smali
 +++ b/framework/smali/android/content/res/Resources$Theme.smali
