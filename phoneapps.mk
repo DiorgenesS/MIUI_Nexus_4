@@ -10,7 +10,8 @@ private-phone-apps := \
 	NfcNci \
 	PacProcessor \
 	PrintSpooler \
-	Stk 
+	Stk \
+	UserDictionaryProvider 
 
 private-phone-priv-apps := \
 	BackupRestoreConfirmation \
