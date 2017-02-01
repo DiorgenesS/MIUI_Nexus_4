@@ -14,6 +14,7 @@ private-phone-apps := \
 	PrintSpooler \
 	Stk \
 	telresources \
+	UserDictionaryProvider \
 	WAPPushManager 
 
 private-phone-priv-apps := \
