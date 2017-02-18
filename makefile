@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := 
 
 # All apks from MIUI
-local-miui-removed-apps := BugReport FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip QuickSearchBox SogouInput SystemAdSolution VoiceAssist WebViewGoogle XiaomiVip XMPass 
+local-miui-removed-apps := BugReport Email FM GameCenter MiGameCenterSDKService MiLivetalk Mipay MiuiSuperMarket MiuiVideo MiuiVoip OneTimeInitializer QuickSearchBox SogouInput SystemAdSolution VoiceAssist XiaomiVip XMPass 
 
 local-miui-modified-apps := ContactsProvider InCallUI MiuiSystemUI SecurityCenter 
 
@@ -54,8 +54,6 @@ include $(PORT_BUILD)/porting.mk
 #pre_install_data_packages := $(TMP_DIR)/pre_install_apk_pkgname.txt
 local-pre-zip-misc:
 	$(TOOLS_DIR)/post_process_props.py out/ZIP/system/build.prop other/build.prop
-	@echo copying files!
-	$(hide) cp -rf other/system $(ZIP_DIR)/
 	@echo remove unnecessary libs!
 	$(hide) rm -rf $(ZIP_DIR)/system/lib64
 	$(hide) rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
@@ -69,6 +67,8 @@ local-pre-zip-misc:
 	@echo remove unnecessary files!
 	$(hide) rm -rf $(ZIP_DIR)/system/recovery-from-boot.bak
 	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/*
+	@echo copying files!
+	$(hide) cp -rf other/system $(ZIP_DIR)/
 	@echo use only miui sounds!
 	$(hide) cp -rf $(PORT_ROOT)/miui/system/media/$(local-density)/audio/* $(ZIP_DIR)/system/media/audio
 	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/create_symlink_for_audio-timestamp
